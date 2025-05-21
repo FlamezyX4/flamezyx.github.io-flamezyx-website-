@@ -1,0 +1,43 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'fira code', monospace;
+    background-color: #0e0e0e;
+    color: #d0ffdf;
+    line-height: 1.6;
+    padding: 2rem;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #1a1a1a;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+
+
+p {
+    margin-bottom: 3rem;
+    padding: 1rem;
+    background: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ffcc20
+}
+
+a:hover {
+    color: #00ff;
+}
+

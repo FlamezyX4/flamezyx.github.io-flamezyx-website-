@@ -1,0 +1,153 @@
+.benos-title {
+    font-size: 100px;
+    justify-content: center;
+    display: flex;
+    gap: 5px;
+    font-weight: bold;
+}
+
+* {
+    background-color: #0e0e0e;
+    color: #d0ffdf;
+    justify-content: space-between;
+    text-shadow: 0 0 10px #00ffcc;
+    font-family: 'fira code', monospace;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    width: 140px;
+    border-radius: 100px;
+}
+
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #d0ffdf;
+    transition: color 0.3s;
+    justify-content: center;
+    display: flex;
+}
+
+
+
+.cool-link {
+    animation-name: popIn;
+    animation: popIn 2s ease-out forwards;
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.nice-link {
+    animation-name: popIn;
+    animation: popIn 3s ease-out forwards;
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.project-link {
+    animation-name: popIn;
+    animation: popIn 4s ease-out forwards;
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.terminal-link {
+    animation: popIn 5s ease-out forwards;
+    animation-name: popIn;
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.settings-link {
+    animation: popIn 6s ease-in forwards;
+    animation-name: popIn;
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .benos-title {
+        font-size: 50px;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .ben,
+    .tech {
+        display: block;
+        animation-duration: 1.2s;
+        animation-timing-function: ease-in-out;
+    }
+
+    .ben {
+        animation-name: colorShift;
+    }
+
+    .tech {
+        animation-name: scaleUp;
+        animation-delay: 0.3s;
+    }
+
+    nav a {
+        font-size: 16px;
+        margin: 8px auto;
+        text-align: center;
+    }
+
+    * {
+        margin-bottom: 1rem;
+    }
+}

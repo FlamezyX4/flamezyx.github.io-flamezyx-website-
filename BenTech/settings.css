@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'fira code', monospace;
+    background-color: #0e0e0e;
+    color: #d0ffdf;
+    line-height: 1.6;
+    padding: 2rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #1a1a1a;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+.boot-title {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #00ffcc;
+    width: 0;
+    color: #00ffcc;
+    text-shadow: 0 0 5px #00ffcc;
+    animation: typing 2s steps(200, end) forwards, blink 0.75s step-end infinite;
+}
+
+p {
+    margin-bottom: 3rem;
+    padding: 1rem;
+    background: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ffcc20
+}
+
+a:hover {
+    color: rgb(111, 0, 255);
+}
+
+h2 {
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ffcc20;
+    background: #1a1a1a;
+}
+
+input {
+    background: #00ffcc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #00ffcc20;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 24%
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+/* 📱 Mobile Responsiveness */
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+        font-size: 0.95rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .boot-title {
+        font-size: 1rem;
+        animation: typing 2s steps(100, end) forwards, blink 0.75s step-end infinite;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    input {
+        width: 100%;
+        padding: 0.75rem;
+        font-size: 1rem;
+    }
+
+    a {
+        word-break: break-word;
+    }
+}

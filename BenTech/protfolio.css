@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'fira code', monospace;
+    background-color: #0e0e0e;
+    color: #d0ffdf;
+    line-height: 1.6;
+    padding: 2rem;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #1a1a1a;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #d0ffdf;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #00ffcc;
+}
+
+
+section {
+    margin-bottom: 3rem;
+    padding: 1rem;
+    background: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ffcc20;
+}
+
+section h2 {
+    color: #00ffcc;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+
+.project-card {
+    background: #111;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #333;
+    border-radius: 8px;
+    transition: transfor 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px #00ffcc55;
+}
+
+.project-card h3 {
+    color: #00ffaa;
+    margin-bottom: 0.5rem;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form textarea {
+    background: #0e0e0e;
+    border: 1px solid #00ffcc55;
+    padding: 0.75rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 0.75rem;
+    background-color: #00ffcc;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: backgroung 0.3s;
+}
+
+form button:hover {
+    background-color: #00ccaa;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        margin-left: 0;
+        margin-right: 15px;
+        font-size: 14px;
+    }
+
+
+    section {
+        padding: 0.75rem;
+    }
+
+    section h2 {
+        font-size: 1.25rem;
+    }
+
+    .project-card {
+        padding: 0.75rem;
+    }
+
+    form input,
+    form textarea,
+    form button {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
